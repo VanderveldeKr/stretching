@@ -1,0 +1,23 @@
+@media screen and (max-width: 900px) {
+
+    .workout__title h2 {
+        font-size: 28px;
+    }
+    .workout-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .workout-content__img {
+        width: 100%;
+    }
+    .workout-content__img img{
+        width: 100%;
+    }
+    .workout-content__list {
+        width: 100%;
+        margin: 0;
+    }
+
+}

@@ -1,0 +1,120 @@
+.slider-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .slider {
+        display: none;
+    }    
+    .slider-mobile{ 
+        display: block;
+    }
+    .carousel {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .slider-mobile {
+        position: relative;
+        padding: 50px 0;
+    }
+    .slider-mobile .slick-list {
+        overflow: hidden;
+    }
+    .slider-mobile .slick-track {
+        display: flex; 
+    }
+    .slider-mobile .slider-item {
+        padding: 0 10px;
+    }   
+    .slider-mobile .slider-item img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }   
+    .slider-mobile .slider-item video{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }   
+    
+    .slider-mobile .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 20%; 
+    }
+    
+    .slider-mobile .slick-dots li {
+        list-style: none;
+        margin: 0 10px; 
+    }
+    .slider-mobile .slick-dots li.slick-active button {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+        transition: .5s;
+        column-gap: #fff; 
+    }
+    .slider-mobile .slick-dots button {
+        font-size: 0;
+        width: 7px;
+        height: 7px;
+        background-color: #d9d8d8;
+        border-radius: 50%; 
+    }
+    .slider-mobile .slick-arrow {
+        position: absolute;
+        z-index: 10;
+        top: 43%;
+        font-size: 0;
+        width: 48px;
+        height: 48px;
+    }
+    .slider-mobile .slick-arrow.slick-next{
+        right: 15px;
+        background-image: url(/img/icon/arrow-next.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50px;
+    }
+    .slider-mobile .slick-arrow.slick-prev {
+        left: 15px;
+        background-image: url(/img/icon/arrow-prev.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50px;
+    }
+    .carousel__title {
+        text-align: center;
+    }
+    .carousel__title h2{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .slider-item_reviews {
+        align-content: center;
+    }  
+    .slider-mobile .slick-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider-mobile .slick-dots button {
+        font-size: 0;
+        width: 5px;
+        height: 5px;
+        background-color: #d9d8d8;
+        border-radius: 50%; 
+    }
+    .slider-mobile .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 0%; 
+    }
+    .slider-mobile .slick-dots {
+        display: none;
+    }
+}

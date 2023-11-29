@@ -1,0 +1,31 @@
+// Базовые настройки
+@import "./basic/reset";
+@import "./basic/base";
+
+// Блок about
+@import "./blocks/about.scss";
+@import "./blocks/mobile-about";
+
+@import "./blocks/workout.scss";
+@import "./blocks/mobile-workout.scss";
+
+@import "./blocks/survey-form";
+
+@import "./blocks/approach";
+@import "./blocks/mobile-approach";
+
+@import "./blocks/carousel";
+@import "./blocks/mobile-carousel";
+
+@import "./blocks/accordion";
+@import "./blocks/mobile-accordion";
+
+@import "./blocks/location";
+@import "./blocks/mobile-location";
+
+@import "./blocks/thanks";
+@import "./blocks/present";
+
+@import "./blocks/popup";
+
+

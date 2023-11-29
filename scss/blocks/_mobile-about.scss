@@ -1,0 +1,52 @@
+@media screen and (max-width: 900px) {
+
+    .about-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        z-index: 4;
+    }
+    .about__title, .approach-title{
+        line-height: 1.2;
+        font-weight: 700;
+        text-align: inherit;
+        color: inherit;
+        text-align: center;
+    }
+    .about__title h1, .approach-title h1 {
+        font-size: 28px;
+    }
+    .about__title h2 {
+        font-size: 18px;
+    }
+    .about__btn {
+        font-size: 18px;
+    }
+    .about__group-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .about__btn-more{
+        width: 100%;
+    }
+    .about__btn-consultation {
+        width: 100%;
+    }
+    .about__btn-text {
+        text-align: center;
+    }
+    .about__questions {
+        font-size: 18px;
+    }
+    .about__questions-title h3{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__btn {
+        font-size: 16px;
+    }
+}

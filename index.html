@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Студия растяжки</title>
+</head>
+
+<body>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-info">
+                <div class="about__title">
+                    <h1>Студия растяжки и мягкого фитнеса для девушек.</h1>
+                    <h2>Для тех, кто хочет получить стройное рельефное тело, без перегрузок и тягания железа</h2>
+                </div>
+                <div class="about__btn">
+                    <div class="about__group-btn">
+                        <div class="about__btn-more">
+                            <a href="#form">Записаться на пробное</a>
+                        </div>
+                        <div class="about__btn-consultation">
+                            <a class="open-pop-up" href="#">Получить консультация</a>
+                        </div>
+                    </div>
+                    <div class="about__btn-text">
+                        <p>3 Филиала в городе Зеленоград.</p>
+                    </div>
+                </div>
+                <div class="about__questions">
+                    <div class="about__questions-title">
+                        <h3>Заполните короткую анкету (5 секунд) и получите бонусы от студии на сумму 4000р</h3>
+                    </div>
+                    <div class="about__questions-list">
+                        <ol>
+                            <li>Скидку 50% на пробное занятие</li>
+                            <li>Чек лист здорового питания стоимость 1000₽ <p> Для вас 0₽</p>
+                            </li>
+                            <li>Диагностика вашего тела 2000₽ <p> Для вас 0₽</p>
+                            </li>
+                            <li>Консультация с тренером 1000₽ <p> Для вас 0₽</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workout">
+        <div class="container">
+            <div class="workout-info">
+                <div class="workout__title">
+                    <h2>Как проходят тренировки</h2>
+                </div>
+                <div class="workout-content">
+                    <div class="workout-content__img">
+                        <img src="./img/5.jpg" alt="Здесь должно быть фото">
+                    </div>
+                    <div class="workout-content__list">
+                        <ul>
+                            <li>Групповые занятия в студии растяжки и женского фитнеса проходят в просторном зале на
+                                новых ковриках под руководством профессионального и аттестованного тренера.</li>
+                            <li>Мы рекомендуем заранее записаться на пробное занятие, что бы мы смогли вам более точно
+                                подобрать группу с вашим уровнем подготовки</li>
+                            <li>Заниматься вы сможете по расписанию, в удобное для себя время. Мы работаем каждый день с
+                                9 до 22:00.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="survey-form">
+        <div class="container">
+            <form action="senderin.php" method="POST">
+                <fieldset>
+                    <legend>Шаг 1 из 4</legend>
+                    <label class="survey-form__title">Какую цель Вы хотите достичь?</label>
+                    <input type="checkbox" name="step1" id="step1_1" value="1">
+                    <label for="step1_1">Избавиться от лишнего веса</label>
+                    <input type="checkbox" name="step1" id="step1_2" value="2">
+                    <label for="step1_2">Хочу растяжку и подтянутую попу</label>
+                    <input type="checkbox" name="step1" id="step1_3" value="3">
+                    <label for="step1_3">Избавиться от болей в спине и шее</label>
+                    <input type="checkbox" name="step1" id="step1_4" value="4">
+                    <label for="step1_4">Хочу отдохнуть развеется</label>
+                </fieldset>
+                <fieldset style="display:none">
+                    <legend>Шаг 2 из 4</legend>
+                    <label class="survey-form__title">Занимались ли Вы спортом раньше?</label>
+                    <input type="radio" name="step2" id="step2_1" value="yes">
+                    <label for="step2_1">Да</label>
+                    <input type="radio" name="step2" id="step2_2" value="no">
+                    <label for="step2_2">Нет</label>
+                </fieldset>
+                <fieldset style="display:none">
+                    <legend>Шаг 3 из 4</legend>
+                    <label class="survey-form__title">Что для Вас важно при выборе студии?</label>
+                    <input type="checkbox" name="step3" id="step3_1" value="1">
+                    <label for="step3_1">Атмосфера и интерьер</label>
+                    <input type="checkbox" name="step3" id="step3_2" value="2">
+                    <label for="step3_2">Найти контакт с тренером</label>
+                    <input type="checkbox" name="step3" id="step3_3" value="3">
+                    <label for="step3_3">Cтоимость абонемента</label>
+                    <input type="checkbox" name="step3" id="step3_4" value="4">
+                    <label for="step3_4">Близость к дому</label>
+                </fieldset>
+                <fieldset style="display:none">
+                    <legend>Шаг 4 из 4</legend>
+                    <label class="survey-form__title" for="phone">Контактные данные</label>
+                    <input class="_req phone" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон*" required>
+                </fieldset>
+                <div class="buttons">
+                    <button type="button" class="button disabled" id="previousButton" disabled>Назад</button>
+                    <button type="button" class="button" id="nextButton">Далее</button>
+                </div>
+                <button class="survey-form_btn send-form" type="button" id="submitButton">Отправить ответы</button>
+            </form>
+    
+        </div>    
+    </section> -->
+
+    <section class="approach">
+        <div class="container">
+            <div class="approach-wrapper">
+                <div class="approach-title">
+                    <h1>Другой подход к тренировкам</h1>
+                </div>
+                <div class="approach-content">
+                    <div class="approach-video">
+                        <video width="100%" preload="auto" controls loop playsinline muted>
+                            <source src="./img/5539676686848.mp4" type='video/mp4'>
+                        </video>
+                    </div>
+                    <div class="workout-content__list">
+                        <ul class="approach-list">
+                            <li class="approach-list__title">Индивидуальный подход на групповых тренировках</li>
+                            <li class="approach-list__text">Тренер выстраивает тренировку персонально под Вас и дает рекомендации по питанию, учитывая Ваши цели и физиологические особенности.</li>
+                            <li class="approach-list__title">Секрет уникальной методики тренировок</li>
+                            <li class="approach-list__text">Мы потратили более 80 часов, чтобы хорошо понимать как работает наше тело. Благодаря этому, мы смогли выстроить наши тренировки так, чтобы при минимальной нагрузки получать максимальный результат.</li>
+                            <li class="approach-list__title">Тренировки под руководством чемпионов</li>
+                            <li class="approach-list__text">Только 1 из 10 тренеров проходит наш отбор. После отбора каждый из них проходит 100 часов обучения. И только после успешного прохождения испытания тренер допускается к проведению тренировок.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__title">
+                <h2>Как проходят тренировки</h2>
+            </div>
+            <div class="slider">
+                <div class="slider-item">
+                    <img src="./img/slider/1.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/2.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/7.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/8.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/4.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/5.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/6.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/2.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/3.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/4.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+            <div class="slider-mobile">
+                <div class="slider-item">
+                    <img src="./img/slider/1.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/2.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/7.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/8.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/4.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/5.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/slider/6.jpg" alt="banner">
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/2.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/3.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/4.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="accordion">
+        <div class="container">
+            <div class="accordion-wrapper">
+                <div class="accordion-title">
+                    <h3>Часто задаваемые вопросы</h3>
+                    <div class="accordion-btn">
+                        <button class="open-pop-up" type="submit">Расписание занятий</button>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-group">
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-1">
+                            <label class="accordion__heading" for="accordion-heading-1">
+                                <p>Абонемент действует на все направления?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>У нас действует единый абонемент на все направления студии. А это значит, вам не придется доплачивать, чтобы попробовать другие направления, это уникально!</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-2">
+                            <label class="accordion__heading" for="accordion-heading-2">
+                                <p>Могу ли я прийти на занятие, если ни когда не занималась?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Мы работаем с любым уровнем подготовки. Наши тренировки подходят как для новичков, так и продвинутому уровню. Занятия строятся таким образом, что тренер уделяет внимание всем и регулирует амплитуду на упражнениях под уровень подготовки занимающихся</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-3">
+                            <label class="accordion__heading" for="accordion-heading-3">
+                                <p>Смогу ли  заниматься с моей комплекцией?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Конечно! В студии занимаются девушки самых разных комплекций. Лишний вес - не повод отказываться от мечты! К тому же наши занятия для этого и нужны. Они помогут вам очень быстро привести тело в форму.</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-4">
+                            <label class="accordion__heading" for="accordion-heading-4">
+                                <p>Нужно ли записываться заранее?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Если вы уже приобрели абонемент, на занятия записываем заранее. Забронировать место на желаемую тренировку можно по телефону, на сайте или в наших социальных сетях</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-5">
+                            <label class="accordion__heading" for="accordion-heading-5">
+                                <p>Что брать с собой на тренировку?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>С собой носочки, футболку, лосины, резинку для волос. Вода в студии уже есть</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-group">
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-6">
+                            <label class="accordion__heading" for="accordion-heading-6">
+                                <p>Не поздно ли мне начать заниматься?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Стретчингом можно заниматься в любом возрасте. Более того, чем Вы старше, тем нужнее тренировки на гибкость. Для женщин старше 50 лет стретчинг должен стать обязательной частью физической активности.</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-7">
+                            <label class="accordion__heading" for="accordion-heading-7">
+                                <p>«Все будут гибкие и худые,мне будет некомфортно»</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Занятия проходят в мини-группе до 8 человек. На занятиях царит очень уютная обстановка, никто никого не осуждает, если не получается, все ученицы сплоченно идут к своим целям, за это можно точно не переживать!</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-8">
+                            <label class="accordion__heading" for="accordion-heading-8">
+                                <p>Все будут смотреть на меня, я стесняюсь</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Занятия проходят в мини группах, что позволяет индивидуально подходить к каждой девушке
+                                    Так же есть индивидуальные занятия.</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-9">
+                            <label class="accordion__heading" for="accordion-heading-9">
+                                <p>Для моего возраста подойдут занятия?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Конечно подойдут. Сейчас у нас занимаются девушки и женщины самых разных возрастов, от 15 до 73 лет. Для того чтобы ваши занятия были продуктивными, мы подберем вам подходящую по уровню группу и направление.</p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-10">
+                            <label class="accordion__heading" for="accordion-heading-10">
+                                <p>Сколько человек в группе?</p>
+                            </label>
+                            <div class="accordion__content">
+                                <p>Мы работаем исключительно в мини-группах до 8 человек, тем самым обеспечиваем индивидуальный подход к каждому в группе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>        
+        </div>    
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__title">
+                <h2>Видео - отзывы о нашей студии</h2>
+            </div>
+            <div class="slider slider-item_reviews">
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/1.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/6.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/5.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+            <div class="slider-mobile slider-item_reviews">
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/1.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/6.mp4" type='video/mp4'>
+                    </video>
+                </div>
+                <div class="slider-item">
+                    <video width="100%" height="500px" preload="auto" controls loop playsinline muted>
+                        <source src="./video/5.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-title">
+                    <h2>Мы школа стретчинга и женского фитнесса №1 в Зеленограде</h2>
+                </div>
+                <div class="location-info">
+                    <div class="location-info_map">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A85159aca7ddc98ce0812e03fa674a384bd120b8b2e17a6847854db8fbef559ce&amp;source=constructor" width="550" height="550" frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="location-info_list">
+                        <div class="location-info_list-wrapper">
+                            <div class="location-info_list-title">
+                                <h4>3 филиала в городе. Мы есть в любом районе города</h4>
+                            </div>
+                            <div class="location-list">
+                                <ul>
+                                    <li>📍 Корпус 322А</li>
+                                    <li>📍 Корпус 1651</li>
+                                    <li>📍 Привокзальная площадь 1 (рядом со станцией Крюково)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="location-info_list-img">
+                            <img src="/img/log.jpg" alt="foto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pop-up">
+        <div class="pop-up__container">
+            <div class="pop-up__body">
+                    <form class="form-contact send-form" action="sender.php" method="POST">
+                        <div class="pop-up__body-text">
+                            <h2>Мы ответивм на все ваши вопросы</h2>
+                        </div>
+                        <input class="input-form _req" type="text" name="name" placeholder="Имя*" required>
+                        <input class="input-form _req phone" type="tel" name="phone" placeholder="Номер телефона*" required>
+                        <button class="form-btn" type="button">Отправить</button>
+                    </form>
+                    <div class="pop-up__close">&#10006;</div>
+                </div>
+        </div>
+    </div>
+
+    <script src="./js/survey-form.js"></script>
+    <script src="./js/JQuery/jquery-3.6.4.js"></script>
+    <script src="./js/Slick Slider/slick.min.js"></script>
+    <script src="./js/Slick Slider/slider.js"></script>
+    <script src="./js/sscroll.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/mask-phone.js"></script>
+    <script src="./js/poup.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

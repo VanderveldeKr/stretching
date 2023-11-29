@@ -1,0 +1,97 @@
+.thanks {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.thanks-content {
+}
+.thanks-gratitude {
+}
+.thanks-gratitude_title {
+    margin-bottom: 30px;
+}
+.thanks-gratitude_title h1{
+    font-size: 31px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: inherit;
+    color: inherit;
+}
+.thanks-gratitude_text {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.thanks-gratitude_text span{
+    display: inline;
+    color: rgb(210, 0, 0);
+    font-weight: 700;
+}
+.thanks-gratitude_text p, span{
+    font-size: 22px;
+    line-height: 1.37;
+    font-weight: 400;
+    text-align: inherit;
+    color: inherit;
+}
+.thanks-info {
+    margin-top: 50px;
+}
+.thanks-info_title {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    width: 98%;
+}
+.thanks-info_title h2{
+    text-align: center;
+    color: rgb(210, 0, 0);
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.37;
+    font-weight: 700;
+}
+.thanks-info_list {
+}
+.thanks-info_list ul {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.thanks-info_list ul li{
+    list-style-type: disc;
+}
+.thanks-info_list ul li p{
+    display: inline-block;
+    font-weight: 700;
+}
+.thanks-info_list-title {
+    margin: 20px 0;
+}
+.thanks-info_list-title h3{
+    font-size: 30px;
+    line-height: 1.37;
+    font-weight: 700;
+    text-align: center;
+}
+.thanks-info_location {
+    margin-left: 10%;
+}
+.thanks-info_location ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thanks-info_location-title {
+    margin-top: 20px;
+}
+.thanks-info_location-title h4{
+    font-size: 20px;
+    font-weight: 700;
+}

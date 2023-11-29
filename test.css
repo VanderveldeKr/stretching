@@ -1,0 +1,300 @@
+.slider-mobile {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+
+    .about-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        z-index: 4;
+    }
+    .about__title, .approach-title{
+        line-height: 1.2;
+        font-weight: 700;
+        text-align: inherit;
+        color: inherit;
+        text-align: center;
+    }
+    .about__title h1, .approach-title h1 {
+        font-size: 28px;
+    }
+    .about__title h2 {
+        font-size: 18px;
+    }
+    .about__btn {
+        font-size: 18px;
+    }
+    .about__group-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .about__btn-more{
+        width: 100%;
+    }
+    .about__btn-consultation {
+        width: 100%;
+    }
+    .about__btn-text {
+        text-align: center;
+    }
+    .about__questions {
+        font-size: 18px;
+    }
+    .about__questions-title h3{
+        font-size: 18px;
+    }
+    .slider {
+        display: none;
+    }    
+    .slider-mobile{ 
+        display: block;
+    }
+    .carousel {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .slider-mobile {
+        position: relative;
+        padding: 50px 0;
+    }
+    .slider-mobile .slick-list {
+        overflow: hidden;
+    }
+    .slider-mobile .slick-track {
+        display: flex; 
+    }
+    .slider-mobile .slider-item {
+        padding: 0 10px;
+    }   
+    .slider-mobile .slider-item img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }   
+    .slider-mobile .slider-item video{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }   
+    
+    .slider-mobile .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 20%; 
+    }
+    
+    .slider-mobile .slick-dots li {
+        list-style: none;
+        margin: 0 10px; 
+    }
+    .slider-mobile .slick-dots li.slick-active button {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+        transition: .5s;
+        column-gap: #fff; 
+    }
+    .slider-mobile .slick-dots button {
+        font-size: 0;
+        width: 7px;
+        height: 7px;
+        background-color: #d9d8d8;
+        border-radius: 50%; 
+    }
+    .slider-mobile .slick-arrow {
+        position: absolute;
+        z-index: 10;
+        top: 43%;
+        font-size: 0;
+        width: 48px;
+        height: 48px;
+    }
+    .slider-mobile .slick-arrow.slick-next{
+        right: 15px;
+        background-image: url(/img/icon/arrow-next.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50px;
+    }
+    .slider-mobile .slick-arrow.slick-prev {
+        left: 15px;
+        background-image: url(/img/icon/arrow-prev.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50px;
+    }
+    .carousel__title {
+        text-align: center;
+    }
+    .carousel__title h2{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .slider-item_reviews {
+        align-content: center;
+    }  
+    .slider-mobile .slick-dots {
+        display: none;
+    }
+    .workout__title h2 {
+        font-size: 28px;
+    }
+    .workout-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .workout-content__img {
+        width: 100%;
+    }
+    .workout-content__img img{
+        width: 100%;
+    }
+    .workout-content__list {
+        width: 100%;
+        margin: 0;
+    }
+    .location-title h2{
+        font-size: 28px;
+    }
+    .location-info {
+        flex-direction: column;
+        gap: 50px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .location-info_map {
+        width: 100%;
+        height: 550px;
+    }
+    .location-info_map iframe{
+        width: 100%;
+        height: 550px;
+    }
+
+    .location-info_list {
+        width: 100%;
+    }
+    .location-info_list-title {
+        margin: 25px 0;
+    }
+
+    .location-list ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .location-info_list-img {
+        width: 100%;
+        height: 40%;
+    }
+    .location-info_list-img img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .approach-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .approach-video {
+        width: 100%;
+    }
+    .approach-video video {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .approach-wrapper .workout-content__list {
+        width: 100%;
+    }
+    .approach-wrapper .workout-content__list li{
+        list-style-type: none;
+    }
+    .approach-wrapper .workout-content__list .approach-list__title {
+        font-size: 16px;
+    }
+    .approach-wrapper .workout-content__list .approach-list__text {
+        font-size: 16px;
+    }
+    .accordion-title h3{
+        font-size: 26px;
+    }
+
+    .accordion-btn button:hover {
+        opacity: .9;
+        padding: 15px 17px 15px 48px;
+        transition: .2s;
+    }
+    
+    .accordion-content {
+        width: 100%;
+        flex-direction: column;
+    }
+      
+    .accordion-group {
+        width: 100%;
+    }
+
+    .accordion-group div::after{
+        top: 30%;
+    }
+    
+    .accordion__heading:after {
+        content: "\25BC";
+        width: 0px;
+        height: 0px;
+        top: 40%;
+        right: 10px;
+    }
+    .accordion__heading:before {
+        display: none;
+    }
+    
+    .accordion__checkbox:checked ~ .accordion__heading:before {
+        display: none;
+    }
+    
+    .accordion__heading:after {
+        transform: rotate(0deg);
+    }
+    
+    .accordion__checkbox:checked ~ .accordion__heading:after {
+        transform: rotate(-180deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .approach-video video {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__btn {
+        font-size: 16px;
+    }
+    .slider-mobile .slick-dots button {
+        font-size: 0;
+        width: 5px;
+        height: 5px;
+        background-color: #d9d8d8;
+        border-radius: 50%; 
+    }
+    .slider-mobile .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 0%; 
+    }
+    .slider-mobile .slick-dots {
+        display: none;
+    }
+}
